@@ -4,7 +4,7 @@ import Lottie from 'react-lottie-player'
 // Alternatively:
 // import Lottie from 'react-lottie-player/dist/LottiePlayerLight'
 
-import lottieJson from '/public/animation.json'
+import lottieJson from '/public/animation'
 
 export default function Animation() {
 return (

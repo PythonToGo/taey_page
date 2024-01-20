@@ -13,13 +13,19 @@ export default function Header() {
               <span className="ml-3 text-xl">Taey&apos;s World </span>
             </a>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <Link href="/" legacyBehavior>
               <a className="mr-5 hover:text-gray-900">Home</a>
+            </Link>
 
-              <Link href="/projects">
-                <a className="mr-5 hover:text-gray-900">Project</a>
-              </Link>
-              {/* <Link><a id="link">Home</a></Link> to <Link id="link">Home</Link> */}
-              <a className="mr-5 hover:text-gray-900">Contact</a>
+            <Link href="/projects" legacyBehavior>
+              <a className="mr-5 hover:text-gray-900" id="/projects">Projects</a>
+            </Link>
+
+            <Link href="/about-me" legacyBehavior>
+              <a className="mr-5 hover:text-gray-900" id="/projects">Contact</a>
+              {/* <a id="/about-me">Contact</a> */}
+            </Link>
+
               {/* <a className="mr-5 hover:text-gray-900">Fourth Link</a> */}
             </nav>
             <button className="inline-flex items-center bg-orange-100 border-0 py-1 px-3 focus:outline-none hover:bg-orange-200 rounded text-base mt-4 md:mt-0">Button
