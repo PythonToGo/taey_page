@@ -8,14 +8,14 @@ const Lottie = dynamic(() => import('react-lottie-player'), {
 });
 
 export default function Animation() {
-  return (
-    <Lottie
-      loop
-      animationData={lottieJson}
-      play
-      // style={{ width: 300, height: 300 }}
-    />
-  );
+    return (
+        <Lottie
+        loop
+        animationData={lottieJson}
+        play
+        // style={{ width: 300, height: 300 }}
+        />
+    );
 }
 
 
