@@ -32,3 +32,5 @@ export default function Header() {
       </div>
   );
 }
+
+// npx @next/codemod new-link .
