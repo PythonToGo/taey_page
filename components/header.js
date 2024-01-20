@@ -33,4 +33,3 @@ export default function Header() {
   );
 }
 
-// npx @next/codemod new-link .
