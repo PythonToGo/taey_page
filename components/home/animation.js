@@ -15,6 +15,16 @@ export default function Animation() {
         play
         // style={{ width: 300, height: 300 }}
         />
+        // <Lottie
+        //     loop
+        //     animationData={lottieJson}
+        //     play
+        //     style={{ 
+        //         width: 300, 
+        //         height: 300, 
+        //         borderRadius: '1000px' // Adjust borderRadius as needed
+        //     }}
+        // />
     );
 }
 

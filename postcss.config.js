@@ -1,6 +1,8 @@
 module.exports = {
   plugins : {
-    tailwindcss : {config : './tailwind.config.js'},
+    // 'postcss-apply', // Remove the single quotes around the plugin name
+    tailwindcss : {},
     autoprefixer : {},
   },
 };
+

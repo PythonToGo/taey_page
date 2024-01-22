@@ -5,6 +5,7 @@ import Hero from '../components/home/hero';
 // import Animation from '../components/home/animation';
 
 export default function Home() {
+
     return (
         <Layout>
 
@@ -19,8 +20,6 @@ export default function Home() {
                 
                 </div>
             </section>
-            
-            
 
         </Layout>
 
