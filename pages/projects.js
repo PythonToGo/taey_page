@@ -17,10 +17,11 @@ export default function Projects({projects}) {
             </Head>
             <h1>All Projects : {projects.results.length} </h1>
 
-            {projects.results.map((aProject) => (
-                <ProjectItem key={aProject.id} data={aProject} />
-            ))}
-
+            <div className="grid grid-cols-1 gap-8 p-12 m-4 md:grid-cols-2">
+                {projects.results.map((aProject) => (
+                    <ProjectItem key={aProject.id} data={aProject} />
+                ))}
+            </div>
         </Layout>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+// import Image from 'next/legacy/image';
 
 export default function ProjectItem({ data }) {
     const title = data.properties.Name.title[0].plain_text;
@@ -7,11 +8,23 @@ export default function ProjectItem({ data }) {
     const gitlab = data.properties.Gitlab && data.properties.Gitlab.url;
     const description = data.properties.Description.rich_text[0].plain_text;
     const tags = data.properties.Tags.multi_select;
+    const imgSrc = data.cover.file?.url || data.cover.external.url;
+
 
     return (
-        <div className="project-card bg-white shadow-lg rounded-lg overflow-hidden">
-            {/* Add an image here if you have one */}
-            {/* <Image src={yourImageUrl} alt={title} width={400} height={200} className="object-cover" /> */}
+        <div className="flex flex-col project-card bg-orange-300 m-3 shadow-lg rounded-md overflow-hidden">
+            
+            <Image 
+            className='rounded-t-xl'
+                src={imgSrc} 
+                alt="cover image"
+                // alt={title} 
+                width={400} 
+                height={200} 
+                layout="responsive"
+                objectFit="cover"
+                quality={100}
+            />
 
             <div className="p-6">
                 <h1 className="text-2xl font-bold text-gray-800">{title}</h1>
