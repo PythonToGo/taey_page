@@ -17,7 +17,7 @@ export default function Projects({projects}) {
                 {/* <link rel="icon" href="/hedge.ico" /> */}
                 <link rel="icon" href="/hedge2.ico" />
             </Head>
-            <h1>All Projects : {projects.results.length} </h1>
+            {/* <h1>All Projects : {projects.results.length} </h1> */}
 
             <div className="grid grid-cols-1 gap-8 p-12 m-4 md:grid-cols-2">
                 {projects.results.map((aProject) => (

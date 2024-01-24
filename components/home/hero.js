@@ -11,7 +11,7 @@ export default function Hero(){
             </h1>
             
             <p className="mb-8 leading-relaxed selected-text">
-                Servus, I am Taey, a Korean Dream Explorer based in Munich, Germany. I study Electrical and Computer Engineering, with a special interest in IT development, and I enjoy learning various programming languages.
+                Hello, I am Taey, a Korean Dream Explorer based in Munich, Germany. I study Electrical and Computer Engineering, with a special interest in IT development, and I enjoy learning various programming languages.
             </p>
             <div className="flex justify-center">
                 <Link href="/projects" legacyBehavior>
