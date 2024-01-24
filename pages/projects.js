@@ -13,7 +13,9 @@ export default function Projects({projects}) {
             <Head>
                 <title>Taey`s Portfolio</title>
                 <meta name="description" content="The way we live like Hedgehog" />
-                <link rel="icon" href="/favicon.ico" />
+                {/* <link rel="icon" href="/favicon.ico" /> */}
+                {/* <link rel="icon" href="/hedge.ico" /> */}
+                <link rel="icon" href="/hedge2.ico" />
             </Head>
             <h1>All Projects : {projects.results.length} </h1>
 
