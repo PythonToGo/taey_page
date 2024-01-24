@@ -27,7 +27,7 @@ export default function Projects({projects}) {
                 ))}
             </div>
         </Layout>
-    );
+    ); 
 }
 
 
