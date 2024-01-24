@@ -134,7 +134,7 @@ export default function Footer() {
 
                     
                     {/* instagram */}
-                    <Link href="https://www.instagram.com/taeyoungkimtaey/" legacyBehavior>
+                    <Link href="https://www.instagram.com/buch.bleibt.immer.mit.mir/" legacyBehavior>
                         <a className="ml-3 text-gray-500">
                         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
