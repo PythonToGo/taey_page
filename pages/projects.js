@@ -28,6 +28,8 @@ export default function Projects({projects}) {
     );
 }
 
+
+
 // build time = calling
 
 export async function getStaticProps() {
