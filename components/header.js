@@ -12,9 +12,11 @@ export default function Header() {
             
           <Link href="/" legacyBehavior>
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-orange-400 rounded-full" viewBox="0 0 24 24">
+                    <text x="14" y="10" textAnchor="middle" dy=".3em" fill="currentColor" fontFamily='Lucida Handwriting' fontSize="23">
+                        ty
+                    </text>
+                </svg>
 
               <span className="ml-3 text-xl dark:text-blue-300">Taey&apos;s World</span>
             </a>

@@ -75,9 +75,22 @@ export default function Footer() {
                 
                 <Link href="/" legacyBehavior>
                 <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-orange-400 rounded-full" viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    <text x="14" y="10" textAnchor="middle" dy=".3em" fill="currentColor" fontFamily='Lucida Handwriting' fontSize="23">
+                        ty
+                    </text>
                 </svg>
+
+
+
+
+
+
+                {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-orange-400 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2l2.4 7.6h7.6l-6 4.8 2.4 7.6-6-4.8-6 4.8 2.4-7.6-6-4.8h7.6z" />
+                </svg> */}
+
                 <span className="ml-3 text-xl ">Taey&apos;s World</span>
                 </a>
                 </Link>
