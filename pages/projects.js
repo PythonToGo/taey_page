@@ -13,11 +13,9 @@ export default function Projects({projects}) {
             <Head>
                 <title>Taey`s Portfolio</title>
                 <meta name="description" content="The way we live like Hedgehog" />
-                {/* <link rel="icon" href="/favicon.ico" /> */}
-                {/* <link rel="icon" href="/hedge.ico" /> */}
                 <link rel="icon" href="/hedge2.ico" />
             </Head>
-            {/* <h1>All Projects : {projects.results.length} </h1> */}
+            <h1 className="animate-bounce text-4xl font-bold text-center mt-10 ">All Projects : {projects.results.length -1 }</h1>
 
             <div className="grid grid-cols-1 gap-8 p-12 m-4 md:grid-cols-2">
                 {projects.results.map((aProject) => (
