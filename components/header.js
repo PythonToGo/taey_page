@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import DarkModeToggleButton from './dark-mode-toggle-button';
-// import HedgehedgeSvg from '../../../public/hedgehedge.svg';
+// import Hedge from '../../../public/hedgehedge';
 import Image from 'next/image';
 
 export default function Header() {
@@ -12,12 +12,7 @@ export default function Header() {
             
           <Link href="/" legacyBehavior>
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-orange-400 rounded-full" viewBox="0 0 24 24">
-                    <text x="14" y="10" textAnchor="middle" dy=".3em" fill="currentColor" fontFamily='Lucida Handwriting' fontSize="23">
-                        ty
-                    </text>
-                </svg>
-
+              <Image src="/hedgehedge.png" alt="hedgehog" width={50} height={50} />
               <span className="ml-3 text-xl dark:text-blue-300">Taey&apos;s World</span>
             </a>
           </Link>
