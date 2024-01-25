@@ -12,7 +12,7 @@ export default function Header() {
             
           <Link href="/" legacyBehavior>
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <Image src="/hedgehedge.png" alt="hedgehog" width={50} height={50} />
+              <Image src="/hedgehedge.png" alt="hedgehog" width={50} height={50} />
               <span className="ml-3 text-xl dark:text-blue-300">Taey&apos;s World</span>
             </a>
           </Link>
