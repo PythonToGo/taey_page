@@ -10,7 +10,7 @@ export default function Home() {
         <Layout>
 
             <Head>
-                <title>Taey`s Portfolio</title>
+                <title>Taey&apos;s World</title>
                 <meta name="description" content="The way we live like Hedgehog" />
                 <link rel="icon" href="/hedge2.ico" />
             </Head>
