@@ -12,6 +12,7 @@ export default function Layout({ children }) {
       <Header />
       {/* <h1>LAYOUT! </h1> */}
       <div>{children}</div>
+      
       <Footer />
     </>
 
