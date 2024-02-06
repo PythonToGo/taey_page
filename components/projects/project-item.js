@@ -1,6 +1,7 @@
 import React from 'react';
-import Image from "next/legacy/image";
-// import Image from 'next/legacy/image';
+import Image from "next/legacy/image";;
+import { colorMapper } from "../../utils/colorMapper.js";
+
 
 //////////////////////////////////////
 function safeFileName(name) {
@@ -16,14 +17,12 @@ export default function ProjectItem({ data }) {
     const imgSrc = data.cover.file?.url || data.cover.external.url;
     const imgFileName = safeFileName(title);
     const localImgSrc = `../public/project-cover/${imgFileName}.png`;
-
-    // Tags
-    const colorMapper = new ColorMapper();
+    const order = data.properties.Order.number;
 
     return (
         <div className="flex flex-col project-card bg-orange-300 m-3 shadow-lg rounded-md overflow-hidden">
             
-            <Image 
+            {/* <Image 
             className='rounded-t-xl'
                 src={imgSrc} 
                 alt="cover image"
@@ -33,9 +32,9 @@ export default function ProjectItem({ data }) {
                 layout="responsive"
                 objectFit="cover"
                 quality={100}
-            />
+            /> */}
 
-            {/* <a href={github || gitlab} target="_blank" rel="noopener noreferrer">
+            <a href={gitlab || github} target="_blank" rel="noopener noreferrer">
                 <Image 
                     className='rounded-t-xl'
                     src={imgSrc} 
@@ -46,7 +45,7 @@ export default function ProjectItem({ data }) {
                     objectFit="cover"
                     quality={100}
                 />
-            </a> */}
+            </a>
 
             <div className="p-6">
                 <h1 className="text-2xl font-bold text-gray-800">{title}</h1>
@@ -79,7 +78,6 @@ export default function ProjectItem({ data }) {
                 )}
             </div>
 
-
                 <div className="flex flex-wrap items-start mt-4">
                     {data.properties.Tags.multi_select.map((tag) => (
                         <span key={tag.id} className={`px-2 py-1 m-1 text-sm rounded-md ${colorMapper.getTailwindColor(tag.color)} text-gray-800`}>
@@ -87,6 +85,7 @@ export default function ProjectItem({ data }) {
                         </span>
                         ))}
                 </div>
+                 
             
             </div>
         </div>
@@ -180,25 +179,25 @@ export default function ProjectItem({ data }) {
 
 
 ////////////////////////////
-class ColorMapper {
-    constructor() {
-        this.colorMap = {
-            "blue": "bg-blue-400",
-            "green": "bg-green-400",
-            "red": "bg-red-400",
-            "yellow": "bg-yellow-400",
-            "purple": "bg-purple-400",
-            "pink": "bg-pink-400",
-            "orange": "bg-orange-400",
-            "gray": "bg-gray-400",
-            // Add more mappings as needed
-        };
-    }
+// class ColorMapper {
+//     constructor() {
+//         this.colorMap = {
+//             "blue": "bg-blue-400",
+//             "green": "bg-green-400",
+//             "red": "bg-red-400",
+//             "yellow": "bg-yellow-400",
+//             "purple": "bg-purple-400",
+//             "pink": "bg-pink-400",
+//             "orange": "bg-orange-400",
+//             "gray": "bg-gray-400",
+//             // Add more mappings as needed
+//         };
+//     }
 
-    getTailwindColor(notionColor) {
-        return this.colorMap[notionColor] || 'bg-gray-200';
-    }
-}
+//     getTailwindColor(notionColor) {
+//         return this.colorMap[notionColor] || 'bg-gray-200';
+//     }
+// }
 
 
 

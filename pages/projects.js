@@ -2,12 +2,12 @@ import Layout from '../components/layout';
 import Head from 'next/head';
 import { TOKEN, DATABASE_ID } from '../config';
 import ProjectItem from '../components/projects/project-item';
+import { colorMapper } from '@/utils/colorMapper';
 
-
-export default function Projects({projects}) {
-
+export default function Projects({projects, tags }) {
+    // const tags = data.properties.Tags.multi_select;
     console.log(projects);
-
+    // console.log(tag);
     return (
         <Layout>
             <Head>
@@ -16,6 +16,20 @@ export default function Projects({projects}) {
                 <link rel="icon" href="/hedge2.ico" />
             </Head>
             <h1 className="animate-bounce text-4xl font-bold text-center mt-10 ">All Projects : {projects.results.length -1 }</h1>
+            
+            {/* show tags list  */}
+            <div className="mt-8 mb-12">
+                {/* <h2 className="text-3xl font-bold text-center">tags</h2> */}
+                <div className="flex flex-wrap justify-center mt-4">
+                    {tags?.map(tag => (
+                        <span key={tag} className={`px-2 py-1 m-1 text-sm rounded-md  ${colorMapper.getTailwindColor(tag.color)}`}>
+                            {tag}
+                        </span>
+                    ))}
+                    
+                </div>
+            </div>
+
             <div className="grid grid-cols-1 gap-8 p-12 m-4 md:grid-cols-2">
                 {projects.results.map((aProject) => (
                     <ProjectItem key={aProject.id} data={aProject} />
@@ -36,14 +50,13 @@ export async function getStaticProps() {
         method: 'POST',
         headers: {
             'accept': 'application/json',
-            // Accept: 'application/json',
             'Notion-Version': '2022-06-28',
             'content-type': 'application/json',
             'authorization': `Bearer ${TOKEN}`
         },
         body: JSON.stringify({
             sorts: [{
-                "property": "Name",
+                "property": "Order",
                 "direction": "ascending"
             }],
             page_size: 100             
@@ -53,13 +66,23 @@ export async function getStaticProps() {
     const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options)
 
     const projects = await res.json();
-    console.log(projects);
+    // console.log(projects);
+
+    // tags list created
+    const tagSet = new Set();
+    projects.results.forEach(project => {
+        project.properties.Tags.multi_select.forEach(tag => {
+            tagSet.add(tag.name);
+        });
+    });
+    const tags = Array.from(tagSet);
 
     return {
-      props: {projects}, // will be passed to the page component as props
-      // getStaticProps() 메소드를 사용한다면 revalidate 로 데이터 변경시 갱신가능!
-      // revalidate: 1 // 데이터 변경이 있으면 갱신 1초 마다
-    }
+        props: { projects, tags: tags || [] }, // 태그 리스트가 없는 경우 빈 배열을 반환
+      };
+    // return {
+    //   props: {projects}, // will be passed to the page component as props
+    // }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
