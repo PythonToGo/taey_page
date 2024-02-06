@@ -7,70 +7,10 @@ export default function Footer() {
             <footer className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-wrap md:text-left text-center order-first">
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    {/* <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 dark:text-blue-300">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 dark:text-blue-300">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                    </li>
-                    </nav> */}
-                </div>
-                {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 dark:text-blue-300">CATEGORIES</h2>
-                    <nav className="list-none mb-10">
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                    </li>
-                    <li>
-                        <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                    </li>
-                    </nav>
-                </div> */}
-                {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 dark:text-blue-300">SUBSCRIBE</h2>
-                    <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                    <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                        <label htmlFor="footer-field" className="leading-7 text-sm text-gray-600s dark:text-blue-300">Placeholder</label>
-                    </div>
-                    <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded">Button</button>
-                    </div>
-                    <p className="text-gray-500 text-sm mt-2 md:text-left text-center dark:text-blue-300">Bitters chicharrones fanny pack
-                    </p>
-                </div> */}
+                    <div className="lg:w-1/4 md:w-1/2 w-full px-4"></div>
                 </div> 
             </div>
+
             <div className="bg-gray-100">
                 <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
                 
@@ -84,7 +24,6 @@ export default function Footer() {
                 </Link>
 
                 <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2024 Taey —
-                    {/* <a href="https://github.com/PythonToGo" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@PythonToGo</a> */}
                     <a href="mailto:pythontogoplease@gmail.com" className="text-gray-600 ml-1">@PythonToGo</a>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
@@ -93,7 +32,6 @@ export default function Footer() {
                 <Link href="mailto:pythontogoplease@gmail.com" legacyBehavior>
                     <a className="ml-3 text-gray-500">
                         <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-8 h-8" viewBox="0 0 24 24">
-                        {/* <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
                         <path d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" fill="none" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </a>
@@ -153,6 +91,14 @@ export default function Footer() {
                         </svg>
                         </a>
                     </Link>
+
+                    {/* kaggle */}
+                    <a href="https://www.kaggle.com/pythontogoplease/" className="ml-4 text-gray-500" target="_blank" rel="noopener noreferrer">
+                        <svg height="24" viewBox="0 0 500 500" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" >
+                            <path d="M385.708,476.478L254.742,313.713l125.578-121.534c2.334-2.426,1.526-9.433-4.761-9.433h-62.16   c-3.145,0-6.288,1.618-9.433,4.761L185.128,307.604V32.738c0-4.491-2.247-6.737-6.738-6.737h-46.618    c-4.492,0-6.737,2.246-6.737,6.737v446.433c0,4.491,2.246,6.738,6.737,6.738h46.618c4.491,0,6.738-2.247,6.738-6.738v-97.91    l27.666-26.317l99.257,126.294c2.695,3.145,5.839,4.762,9.432,4.762h60.095c3.143,0,4.939-0.899,5.389-2.696L385.708,476.478z" fill="#6B7280"/>
+                        </svg>
+                    </a>
+
 
                     
                 </span>
