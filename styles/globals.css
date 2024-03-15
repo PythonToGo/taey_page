@@ -29,3 +29,40 @@
     }
     
 
+/* CSS CUBELIKE */
+.perspective {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+  }
+  
+  .cube {
+    position: relative;
+    width: 100vw; 
+    height: 100vw; 
+    max-width: 80vh; 
+    max-height: 80vh;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+   .rotate-cube {
+    transform: rotateY(180deg);
+  } 
+  
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    backface-visibility: hidden;
+  }
+  

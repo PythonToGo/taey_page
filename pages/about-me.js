@@ -1,22 +1,21 @@
-import Layout from '@/components/layout';
-import Image from "next/legacy/image";
+import Layout from '../components/layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/resume.module.css';
+import Resume from '@/components/aboutme/resume.js';
 import Link from 'next/link';
 import { downloadPDF } from '@/utils/pdfGenerator';
-import Resume from '../components/aboutme/resume';
+
 
 export default function AboutMe() {
-    return (
-        <Layout>
-            {/* <h1>About Me</h1>
-            <p>This is the about me page where I introduce myself.</p> */}
-            {/* Add more content and styling as needed */}
-
-            <div>
-                <div id="cvContent">
-                    <Resume/>      
-            </div>
-            <button onClick={() => downloadPDF('cvContent')}>Download CV as PDF</button>
-        </div>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <div><button onClick={() => downloadPDF('cvContent')}className={styles.downloadButton}>Download CV as PDF</button></div>
+      <div id="cvContent" className={styles.cvContentContainer}>
+          <Resume/>
+          <h1>__________________________</h1>
+      </div>
+      
+    </Layout>
+  );
 }

@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section {
+    display: flexbox; 
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .category {
+    font-weight: bold;
+    color: #eb7222;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.contentList {
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+.date {
+    font-weight: bold;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.contentItem {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    grid-column-gap: 16px;
+    margin-bottom: 8px;
+}
+
+.details {
+    margin-left: 120px; 
+    position: relative;
+    
+
+}
+.bigtitle {
+    
+    margin-left: 100px;
+    font-weight: bold;
+    position: relative;
+}
+.bigtitle::before {
+    content: "•";
+    position: absolute;
+    left: -20px; 
+    top: 0;
+    font-size: 20px;
+    line-height: 1;
+}
+  
+.subtitle {
+padding-left: 100px; 
+}
+.subtitle::before {
+    content: "- ";
+    left: -10px; 
+    top: 0;
+    font-size: 20px;
+    line-height: 1;
+}
+.mtitle{
+    font-weight: bold;
+    margin-left: 100px;
+    position: relative;
+}
+.mtitle::before{
+    content: "•";
+    position: absolute;
+    left: -20px; 
+    top: 0;
+    font-size: 20px;
+    line-height: 1;
+}
+.label {
+    font-weight: normal;
+  }
+
+.link {
+    color: #eb7222;
+    margin-left: 4px;
+}
+
+/* download Butteon */
+.downloadButton {
+    background-color: #eb7222; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #efcba1;
+}
+
+.downloadButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.downloadButton:active {
+  background-color: #808080; 
+  transform: translateY(2px);
+}
+
+
+.cvContentContainer {
+    padding-top: 1em;
+    padding-bottom: 10em;
+}
+
