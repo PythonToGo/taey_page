@@ -26,7 +26,7 @@ const Cube = () => {
   return (
     <div className="perspective">
       <div className={`cube ${rotate ? 'rotate-cube' : ''} ${expanded ? 'expanded-cube' : ''}`} onClick={toggleRotate}>
-        <div className="face top">Home</div>
+        <div className="face">Home</div>
         <div className="face back">AboutMe</div>
         <div className="face front">Projects</div>
         <div className="face bottom">Contacts</div>
