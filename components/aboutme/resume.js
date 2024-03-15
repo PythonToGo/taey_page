@@ -78,7 +78,7 @@ import Layout from '@/components/layout';
                  </div>
              </div>
              <div className={styles.contentsBlocks}>
-                 <div className={styles.date}>July. 2023 – Sep 2023</div>
+                 <div className={styles.date}>April. 2023 – Sep 2023</div>
                  <div className={styles.details}>
                  <div className={styles.bigtitle}>Fairness of Predictive Modelling Based on Traffic Check Data,
                  <span className={styles.label}> TU Munich, Germany </span></div>
