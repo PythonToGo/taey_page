@@ -37,3 +37,61 @@ next-env.d.ts
 
 # about me
 public/image/taey_foto.png
+
+# 시스템 및 사용자 디렉토리 제외
+/.Trash/
+../../.CFUserTextEncoding
+../../.DS_Store
+../../.android/
+../../.bash_history
+../../.bashrc
+../../.cache/
+../../.cocoapods/
+../../.config/
+../../.dart-tool/
+../../.dart/
+../../.dartServer/
+../../.docker/
+../../.flutter
+../../.gem/
+../../.gitconfig
+../../.ipynb_checkpoints/
+../../.ipython/
+../../.jupyter/
+../../.lesshst
+../../.local/
+../../.matplotlib/
+../../.node_repl_history
+../../.npm/
+../../.oh-my-zsh/
+../../.parsec/
+../../.profile
+../../.pub-cache/
+../../.shell.pre-oh-my-zsh
+../../.ssh/
+../../.swiftpm/
+../../.viminfo
+../../.vscode/
+../../.yarn/
+../../.zcompdump*
+../../.zprofile
+../../.zsh_history
+../../.zsh_sessions/
+../../.zshenv
+../../.zshrc
+../../.zshrc.pre-oh-my-zsh
+
+# 사용자 디렉토리 제외
+../../Documents/
+../../Downloads/
+../../Library/
+../../Movies/
+../../Music/
+../../Pictures/
+../../StudioProjects/
+../../development/
+
+# 기타
+../../jbr_err_pid3457.log
+../../package-lock.json
+../../security-key.txt
