@@ -78,81 +78,9 @@ export async function getStaticProps() {
     const tags = Array.from(tagSet);
 
     return {
-        props: { projects, tags: tags || [] }, // 태그 리스트가 없는 경우 빈 배열을 반환
+        props: { projects, tags: tags || [] },
       };
     // return {
     //   props: {projects}, // will be passed to the page component as props
     // }
 }
-
-////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////
-
-// import Layout from '../components/layout';
-// import Head from 'next/head';
-// import { TOKEN, DATABASE_ID } from '../config';
-// import ProjectItem from '../components/projects/project-item';
-
-
-// export default function Projects({projects}) {
-
-//     console.log(projects);
-
-//     return (
-//         <Layout>
-//             <Head>
-//                 <title>Taey`s Portfolio</title>
-//                 <meta name="description" content="The way we live like Hedgehog" />
-//                 <link rel="icon" href="/favicon.ico" />
-//             </Head>
-//             <h1>All Projects : {projects.results.length} </h1>
-
-//             {projects.results.map((aProject) => (
-//                 <ProjectItem key={aProject.id} data={aProject} />
-//             ))}
-
-//         </Layout>
-//     );
-// }
-
-// export async function getStaticPaths() {
-//     // Fetch the list of projects
-//     const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, {
-//         method: 'POST',
-//         headers: {
-//             'accept': 'application/json',
-//             // Accept: 'application/json',
-//             'Notion-Version': '2022-06-28',
-//             'content-type': 'application/json',
-//             'authorization': `Bearer ${TOKEN}`
-//         },
-//         body: JSON.stringify({ page_size: 100 })
-//     });
-//     const { results } = await res.json();
-
-//     // Get the paths we want to pre-render based on projects
-//     const paths = results.map((project) => ({
-//         params: { id: project.id },
-//     }));
-
-//     // We'll pre-render only these paths at build time.
-//     // { fallback: false } means other routes should 404.
-//     return { paths, fallback: false };
-// }
-
-
-// export async function getStaticProps({ params }) {
-//     // Fetch necessary data for the project using params.id
-//     const res = await fetch(`https://api.notion.com/v1/pages/${params.id}`, {
-//         method: 'GET',
-//         headers: {
-//             'Authorization': `Bearer ${TOKEN}`,
-//             'Notion-Version': '2022-06-28',
-//         },
-//     });
-//     const project = await res.json();
-
-//     return {
-//         props: { project },
-//     };
-// }
