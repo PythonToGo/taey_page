@@ -8,13 +8,20 @@ import Layout from '@/components/layout';
        <div className={styles.resume}>
          <div className={styles.header}>
            <h1>Taeyoung Kim</h1>
-           <p>+49 15781051446 |  <Link href="mailto:ty.kim@tum.de" className="text-gray-600 ml-1"></Link>ty.kim@tum.de</p>
+           <p> <Link href="mailto:ty.kim@tum.de" className="text-gray-600 ml-1"></Link>ty.kim@tum.de</p>
          </div>
         
          <div className={styles.section}>
              <div className={styles.category}>Education</div>
              <div className={styles.contentsBlocks}>
-                 <div className={styles.date}>Oct. 2021 – Present</div>
+                 <div className={styles.date}>Oct. 2024 – TBD</div>
+                 <div className={styles.details}>
+                 <div className={styles.bigtitle}>Technical University Munich, Munich, Germany</div>
+                 <div className={styles.subtitle}>Master of Science in Electrical and Computer Engineering</div>
+                 </div>
+             </div>
+             <div className={styles.contentsBlocks}>
+                 <div className={styles.date}>Oct. 2021 – Dec. 2024</div>
                  <div className={styles.details}>
                  <div className={styles.bigtitle}>Technical University Munich, Munich, Germany</div>
                  <div className={styles.subtitle}>Bachelor of Science Electrical and Computer Engineering</div>
@@ -37,8 +44,8 @@ import Layout from '@/components/layout';
                  <div className={styles.details}>
                  <div className={styles.bigtitle}>Robotic Process Automation Engineer, 
                  <span className={styles.label}> BMW AG, Munich, Germany</span></div>
-                 <div className={styles.subtitle}>Robotic Process Automation (RPA), Migration Excel VBA-based legacy systems to a .NET/VB.NET environment</div>
-                 <div className={styles.subtitle}>Developing program to automatically convert Excel-based reports for use in web databases</div>
+                 <div className={styles.subtitle}>Code Migration/Conversion: from VBA to Python, C#, VB.NET</div>
+                 <div className={styles.subtitle}>Automated Tool Development: SPEC/Change management, QA Process</div>
                  </div>
              </div>
              <div className={styles.contentsBlocks}>
@@ -46,7 +53,9 @@ import Layout from '@/components/layout';
                  <div className={styles.details}>
                  <div className={styles.bigtitle}>R&D Total Vehicle Development, 
                  <span className={styles.label}> BMW AG, Munich, Germany</span></div>
-                 <div className={styles.subtitle}>Software QA (Test Program Automation), Data Processing Structure/Program Development</div>
+                 <div className={styles.subtitle}>Design a data-driven automation framework for Check-Tool</div>
+                 <div className={styles.subtitle}>Data Processing Structure Development</div>
+                 <div className={styles.subtitle}>Digitalization of VBA-based legacy systems to web integration</div>
                  </div>
              </div>
              <div className={styles.contentsBlocks}>
@@ -69,6 +78,14 @@ import Layout from '@/components/layout';
 
          <div className={styles.section}>
              <div className={styles.category}>Projects </div>
+             <div className={styles.contentsBlocks}>
+                 <div className={styles.date}>Mai. 2024 – Nov 2024</div>
+                 <div className={styles.details}>
+                 <div className={styles.bigtitle}>Sentiment Analysis and Visualization of Song Lyrics using Deep Learning and NLP, 
+                 <span className={styles.label}> Bachelor Thesis, TU Munich, Germany</span></div>
+                 <div className={styles.subtitle}>Sentiment Analysis using BERT-based model and Visualization using genAI (Diffusion Model)</div>
+                 </div>
+             </div>
              <div className={styles.contentsBlocks}>
                  <div className={styles.date}>Jan. 2024 – Present</div>
                  <div className={styles.details}>
@@ -111,9 +128,10 @@ import Layout from '@/components/layout';
              <div className={styles.category}>Digital Skills </div>
              <div className={styles.contentsBlocks}>
                  <div className={styles.details}>
-                 <div className={styles.mtitle}>Backend: Python | Java | JavaScript | C++ | SQL (MySQL) | VB | .NET/ VB.NET | MATLAB</div>
-                 
-                 <div className={styles.mtitle}>Frontend: JavaScript | NEXT.JS | React</div>
+                 <div className={styles.mtitle}>Language: Python | JavaScript | Dart | VBA | .NET/ VB.NET | C++ | MATLAB</div>
+                 <div className={styles.mtitle}>Framework: PyTorch | TensorFlow | Flutter | NEXT.JS</div>
+                 <div className={styles.mtitle}>Tools: Git | Docker | Xcode | Antroid Studio | Pytest </div>
+                 <div className={styles.mtitle}>Databse: MySQL(SQL) | Firebase </div>
                  </div>
              </div>
          </div>
@@ -140,14 +158,14 @@ import Layout from '@/components/layout';
                     <Link href="https://www.instagram.com/buch.bleibt.immer.mit.mir" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" className={styles.link}>https:www.instagram.com/buch.bleibt.immer.mit.mir</a>
                         </Link></span></div>
-                 <div className={styles.mtitle}>Make Web page : 
+                 {/* <div className={styles.mtitle}>Make Web page : 
                  <span className={styles.label}> 
                  <Link href="https:www.taeyim.de" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" className={styles.link}>https:www.taeyim.de</a>
-                        </Link></span></div>
+                        </Link></span></div> */}
                  <div className={styles.mtitle}>Puzzle Game : 
                  <span className={styles.label}> Sudoku, Cubes, Chess</span></div>
-                 <div className={styles.mtitle}>Making App-like Game</div>
+                 {/* <div className={styles.mtitle}>Making App-like Game</div> */}
                  </div>
              </div>
          </div>
