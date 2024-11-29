@@ -39,10 +39,6 @@ export default function Projects({projects, tags }) {
     ); 
 }
 
-
-
-// build time = calling
-
 export async function getStaticProps() {
     
 
@@ -80,7 +76,4 @@ export async function getStaticProps() {
     return {
         props: { projects, tags: tags || [] },
       };
-    // return {
-    //   props: {projects}, // will be passed to the page component as props
-    // }
 }
