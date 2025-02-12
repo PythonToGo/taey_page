@@ -40,8 +40,6 @@ export default function Projects({projects, tags }) {
 }
 
 export async function getStaticProps() {
-    
-
     const options = {
         method: 'POST',
         headers: {
@@ -51,29 +49,34 @@ export async function getStaticProps() {
             'authorization': `Bearer ${TOKEN}`
         },
         body: JSON.stringify({
-            sorts: [{
+            sorts: [
+                {
                 "property": "Order",
                 "direction": "ascending"
-            }],
+            }
+        ],
             page_size: 100             
         })
     };
         
     const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options)
-
     const projects = await res.json();
-    // console.log(projects);
-
+    
     // tags list created
-    const tagSet = new Set();
-    projects.results.forEach(project => {
-        project.properties.Tags.multi_select.forEach(tag => {
-            tagSet.add(tag.name);
+    const tagSet = [];
+
+    projects.results.forEach((project) => {
+        project.properties.Tags.multi_select.forEach((tagObj) => {
+            if (!tagList.some((t) => t.id === tagObj.id)) {
+            tagList.push(tagObj);
+            }
         });
     });
-    const tags = Array.from(tagSet);
 
     return {
-        props: { projects, tags: tags || [] },
-      };
+        props: { 
+            projects,
+            tags: tagList
+        }
+    };
 }
