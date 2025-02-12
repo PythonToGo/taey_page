@@ -19,11 +19,13 @@ export default function Projects({projects, tags }) {
             
             {/* show tags list  */}
             <div className="mt-8 mb-12">
-                {/* <h2 className="text-3xl font-bold text-center">tags</h2> */}
                 <div className="flex flex-wrap justify-center mt-4">
                     {tags?.map(tag => (
-                        <span key={tag} className={`px-2 py-1 m-1 text-sm rounded-md  ${colorMapper.getTailwindColor(tag.color)}`}>
-                            {tag}
+                        <span
+                            key={tag.id}
+                            className={`px-2 py-1 m-1 text-sm rounded-md  ${colorMapper.getTailwindColor(tag.color)}`}
+                        >
+                        {tag.name}
                         </span>
                     ))}
                     
