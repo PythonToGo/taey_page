@@ -63,7 +63,7 @@ export async function getStaticProps() {
     const projects = await res.json();
     
     // tags list created
-    const tagSet = [];
+    const tagList = [];
 
     projects.results.forEach((project) => {
         project.properties.Tags.multi_select.forEach((tagObj) => {
