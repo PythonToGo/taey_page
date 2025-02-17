@@ -5,9 +5,7 @@ import ProjectItem from '../components/projects/project-item';
 import { colorMapper } from '@/utils/colorMapper';
 
 export default function Projects({projects, tags }) {
-    // const tags = data.properties.Tags.multi_select;
     console.log(projects);
-    // console.log(tag);
     return (
         <Layout>
             <Head>
