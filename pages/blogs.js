@@ -46,7 +46,7 @@ export default function Blogs() {
       <div className="flex flex-col md:flex-row p-8">
         {/* Left: Post lists */}
         <div className="w-full md:w-3/4">
-          <h1 className="text-3xl font-bold mb-6">Blogs</h1>
+          <h1 className="text-3xl font-bold mb-6">Blogs: Work In Progress!</h1>
           <ul className="space-y-6">
             {filteredPosts.map((post) => (
               <li key={post.id} className="border-b pb-4">
