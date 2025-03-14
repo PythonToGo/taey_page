@@ -1,7 +1,13 @@
-import Link from "next/link";
-import Image from "next/image";
-import { FaGithub, FaLinkedin, FaKaggle, FaInstagram, FaEnvelope } from "react-icons/fa";
-import { SiGitlab, SiKakao } from "react-icons/si";
+import Link from 'next/link';
+import Image from 'next/image';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaKaggle,
+  FaInstagram,
+  FaEnvelope,
+} from 'react-icons/fa';
+import { SiGitlab, SiKakao } from 'react-icons/si';
 
 export default function Footer() {
   return (
@@ -19,13 +25,18 @@ export default function Footer() {
               className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
               aria-label="Homepage"
             >
-              <Image src="/hedgehedge.png" alt="Hedgehog logo" width={50} height={50} />
+              <Image
+                src="/hedgehedge.png"
+                alt="Hedgehog logo"
+                width={50}
+                height={50}
+              />
               <span className="ml-3 text-xl">Taey&apos;s World</span>
             </a>
           </Link>
 
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-            © 2024 Taey —{" "}
+            © 2025 Taey —{' '}
             <a
               href="mailto:pythontogoplease@gmail.com"
               className="text-gray-600 ml-1"
@@ -44,7 +55,10 @@ export default function Footer() {
             </Link>
 
             {/* LinkedIn */}
-            <Link href="https://www.linkedin.com/in/taeyoungkimtaey/" legacyBehavior>
+            <Link
+              href="https://www.linkedin.com/in/taeyoungkimtaey/"
+              legacyBehavior
+            >
               <a className="ml-3 text-gray-500" aria-label="LinkedIn Profile">
                 <FaLinkedin className="w-6 h-6" />
               </a>
@@ -72,7 +86,10 @@ export default function Footer() {
             </Link>
 
             {/* Instagram */}
-            <Link href="https://www.instagram.com/buch.bleibt.immer.mit.mir/" legacyBehavior>
+            <Link
+              href="https://www.instagram.com/buch.bleibt.immer.mit.mir/"
+              legacyBehavior
+            >
               <a className="ml-3 text-gray-500" aria-label="Instagram Profile">
                 <FaInstagram className="w-6 h-6" />
               </a>
@@ -95,4 +112,3 @@ export default function Footer() {
     </footer>
   );
 }
-

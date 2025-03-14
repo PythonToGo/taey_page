@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Layout from '../components/layout';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/blog';
@@ -40,6 +41,16 @@ export default function Blogs() {
                   {post.title}
                 </Link>
               </h2>
+              <div>
+                {post.tags?.map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-gray-200 text-sm mr-2 mb-2 px-2 rounded"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
               <p className="text-sm text-gray-600">
                 {new Date(post.createdAt.seconds * 1000).toLocaleDateString()}
               </p>
