@@ -8,6 +8,7 @@ const availableTags = [
   'Python',
   'DevOps',
   'Leet Code',
+  'Blog test post',
 ];
 
 export default function BlogForm() {
