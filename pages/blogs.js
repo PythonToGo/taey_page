@@ -58,27 +58,3 @@ export default function Blogs() {
     </Layout>
   );
 }
-
-// const blogPosts = [
-//   { id: 'first-post', title: 'My First Blog Post', date: '2025-02-17' },
-//   {
-//     id: 'nextjs-guide',
-//     title: 'Getting Started with Next.js',
-//     date: '2025-02-18',
-//   },
-// ];
-
-// export default function Blogs() {
-//   return (
-//     <Layout>
-//       <Head>
-//         <title>Blogs | Taey&apos;s World</title>
-//         <meta
-//           name="description"
-//           content="Taey's personal blog about tech, life, and more."
-//         />
-//         <link rel="icon" href="/hedge2.ico" />
-//       </Head>
-//     </Layout>
-//   );
-// }
